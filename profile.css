@@ -29,6 +29,19 @@ body {
   margin-bottom: 2rem;
    z-index: 100;
 }
+.pics-div{
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  border-radius: 250px;
+  margin-top: 30px;
+
+}
+.pics{
+  height: 500px;
+  border-radius: 250px;
+
+}
 /* Canvas covers hero area */
 .hero { position: relative; overflow: hidden; }
 .starfield {
