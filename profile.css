@@ -109,7 +109,7 @@ h2 {
   padding: 0;
 }
 .experience li {
-  border-left: 4px solid #4f46e5;
+  border-left: 4px solid rgba(225, 126, 5, 0.986);
   padding-left: 15px;
   margin-bottom: 20px;
 }
