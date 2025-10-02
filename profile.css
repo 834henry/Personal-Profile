@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', Tahoma, sans-serif;
+  color: white;
+  background: hsl(0, 0%, 10%);
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  height: 50vh;
+  background: linear-gradient(to right, #0A192F, #FFD700);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  background: white;
+  color: #4f46e5;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.btn:hover {
+  background: #f1f1f1;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* About */
+.about p {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Portfolio */
+.portfolio {
+  background: #f1f1f1;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-img {
+  height: 150px;
+  background: #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Experience */
+.experience ul {
+  list-style: none;
+  padding: 0;
+}
+.experience li {
+  border-left: 4px solid #4f46e5;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+.experience h3 {
+  margin: 0 0 5px;
+}
+
+/* Contact */
+.contact {
+  background: #4f46e5;
+  color: white;
+  text-align: center;
+}
+.contact-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.8rem;
+}
+.contact-icons a {
+  color: white;
+  transition: color 0.3s;
+}
+.contact-icons a:hover {
+  color: #ddd;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
