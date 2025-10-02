@@ -24,7 +24,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   ctx.scale(DPR, DPR);
 
   // configurable
-  const STAR_COUNT = Math.floor((w * h) / 6000); // density tweak
+  const STAR_COUNT = Math.floor((w * h) / 6000); 
   const MAX_RADIUS = 1.6;
   const MIN_RADIUS = 0.3;
   const stars = [];
@@ -58,7 +58,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   }
   window.addEventListener('resize', resize);
 
-  // optional parallax on mouse
+  
   window.addEventListener('mousemove', (e) => {
     const rect = canvas.getBoundingClientRect();
     mouseX = (e.clientX - rect.left) || w / 2;
@@ -72,9 +72,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     ctx.clearRect(0, 0, w, h);
 
-    // draw background subtle gradient (optional)
+    // draw background subtle gradient 
     const g = ctx.createLinearGradient(0, 0, 0, h);
-    g.addColorStop(0, 'rgba(10,12,20,0.95)'); // adjust to match hero
+    g.addColorStop(0, 'rgba(10,12,20,0.95)'); 
     g.addColorStop(1, 'rgba(18,18,28,0.95)');
     ctx.fillStyle = g;
     ctx.fillRect(0, 0, w, h);
