@@ -102,7 +102,10 @@ h2 {
   border-radius: 10px;
   margin-bottom: 15px;
 }
-
+.project-images{
+  height: 150px;
+  width: 280px;
+}
 /* Experience */
 .experience ul {
   list-style: none;
