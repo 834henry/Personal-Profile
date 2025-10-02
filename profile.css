@@ -138,6 +138,15 @@ h2 {
   color: #ddd;
 }
 
+.icons{
+  height: 80px;
+  transition: 0.3s;
+}
+.icons:hover{
+  transform: scale(2.05);
+
+}
+
 /* Footer */
 footer {
   background: #111;
