@@ -9,7 +9,7 @@ body {
 
 /* Hero */
 .hero {
-  height: 50vh;
+  height: 100vh;
   background: linear-gradient(to right, #0A192F, #FFD700);
   color: white;
   display: flex;
@@ -17,26 +17,43 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+   z-index: 100;
 }
 .hero-title {
   font-size: 3rem;
   margin-bottom: 1rem;
+  z-index: 100;
 }
 .hero-subtitle {
   font-size: 1.3rem;
   margin-bottom: 2rem;
+   z-index: 100;
 }
+/* Canvas covers hero area */
+.hero { position: relative; overflow: hidden; }
+.starfield {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-content { position: relative; z-index: 2; } 
+
 .btn {
-  background: white;
-  color: #4f46e5;
+  background:rgba(225, 126, 5, 0.986);
+  color: white;
   padding: 12px 24px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+   z-index: 100;
 }
 .btn:hover {
-  background: #f1f1f1;
+  background:rgba(225, 126, 0, 0.5);
 }
 
 /* Sections */
@@ -47,7 +64,7 @@ section {
 }
 h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
@@ -56,13 +73,13 @@ h2 {
   text-align: center;
   max-width: 700px;
   margin: auto;
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 80%);
 }
 
 /* Portfolio */
 .portfolio {
-  background: #f1f1f1;
+  background: black;
 }
 .portfolio-grid {
   display: grid;
@@ -70,7 +87,7 @@ h2 {
   gap: 20px;
 }
 .card {
-  background: white;
+  background:rgba(225, 126, 5, 0.986);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -81,7 +98,7 @@ h2 {
 }
 .card-img {
   height: 150px;
-  background: #ddd;
+  background: grey;
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -102,7 +119,7 @@ h2 {
 
 /* Contact */
 .contact {
-  background: #4f46e5;
+  background: rgba(225, 126, 5, 0.986);
   color: white;
   text-align: center;
 }
