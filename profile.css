@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: "Arial", Tahoma, sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   background: hsl(0, 0%, 10%);
   line-height: 1.6;
@@ -41,6 +41,10 @@ body {
   height: 500px;
   border-radius: 250px;
 }
+.aboutMe{
+ font-size: 25px;
+}
+
 /* Canvas covers hero area */
 .hero {
   position: relative;
@@ -104,11 +108,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
-@media (max-width: 200px) {
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
 .card {
   background: rgba(225, 126, 5, 0.986);
   padding: 20px;
