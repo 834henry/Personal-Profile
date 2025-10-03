@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   margin: 0;
-  font-family: 'Arial', Tahoma, sans-serif;
+  font-family: "Arial", Tahoma, sans-serif;
   color: white;
   background: hsl(0, 0%, 10%);
   line-height: 1.6;
@@ -10,14 +10,14 @@ body {
 /* Hero */
 .hero {
   height: 100vh;
-  background: linear-gradient(to right, #0A192F, #FFD700);
+  background: linear-gradient(to right, #0a192f, #ffd700);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-   z-index: 100;
+  z-index: 100;
 }
 .hero-title {
   font-size: 3rem;
@@ -27,23 +27,24 @@ body {
 .hero-subtitle {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-   z-index: 100;
+  z-index: 100;
 }
-.pics-div{
+.pics-div {
   display: flex;
   flex-direction: column;
   z-index: 100;
   border-radius: 250px;
   margin-top: 15px;
-
 }
-.pics{
+.pics {
   height: 500px;
   border-radius: 250px;
-
 }
 /* Canvas covers hero area */
-.hero { position: relative; overflow: hidden; }
+.hero {
+  position: relative;
+  overflow: hidden;
+}
 .starfield {
   position: absolute;
   inset: 0;
@@ -53,20 +54,23 @@ body {
   z-index: 0;
   pointer-events: none;
 }
-.hero-content { position: relative; z-index: 2; } 
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
 
 .btn {
-  background:rgba(225, 126, 5, 0.986);
+  background: rgba(225, 126, 5, 0.986);
   color: white;
   padding: 12px 24px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-   z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 .btn:hover {
-  background:rgba(225, 126, 0, 0.5);
+  background: rgba(225, 126, 0, 0.5);
 }
 
 /* Sections */
@@ -99,11 +103,12 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
+
 .card {
-  background:rgba(225, 126, 5, 0.986);
+  background: rgba(225, 126, 5, 0.986);
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
 }
 .card:hover {
@@ -115,9 +120,9 @@ h2 {
   border-radius: 10px;
   margin-bottom: 15px;
 }
-.project-images{
-  height: 150px;
-  width: 280px;
+.project-images {
+  height: 100%;
+  width: 100%;
 }
 /* Experience */
 .experience ul {
@@ -154,13 +159,17 @@ h2 {
   color: #ddd;
 }
 
-.icons{
+.icons {
   height: 80px;
   transition: 0.3s;
 }
-.icons:hover{
+.icons:hover {
   transform: scale(2.05);
-
+}
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Footer */
